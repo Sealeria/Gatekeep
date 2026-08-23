@@ -1,7 +1,7 @@
 # Gatekeep
 
 <p align="center">
-  <img src="docs/assets/dashboard-hero.png" alt="Gatekeep dashboard: live token deltas, save rate, and observed headroom for the selected session period" width="920" />
+  <img src="docs/assets/readme-dashboard.png" alt="Gatekeep dashboard: live token deltas, save rate, and observed headroom for the selected session period" width="920" />
 </p>
 
 <p align="center"><em>Example session view (27 requests): 815k raw tokens reduced to 115k sent (85.9% save rate, ×7.1 observed headroom). Multipliers update live per request.</em></p>
