@@ -1,0 +1,22 @@
+services:
+  gatekeep:
+    build: .
+    container_name: gatekeep
+    restart: unless-stopped
+    ports:
+      - "${GATEKEEP_PORT:-9477}:${GATEKEEP_PORT:-9477}"
+      - "${GATEKEEP_AGENT_PORT:-9478}:${GATEKEEP_AGENT_PORT:-9478}"
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      GATEKEEP_HOST: "0.0.0.0"
+      GATEKEEP_PORT: "${GATEKEEP_PORT:-9477}"
+      GATEKEEP_AGENT_HOST: "0.0.0.0"
+      GATEKEEP_AGENT_PORT: "${GATEKEEP_AGENT_PORT:-9478}"
+      GATEKEEP_DATA_DIR: /var/lib/gatekeep
+    volumes:
+      - gatekeep-data:/var/lib/gatekeep
+
+volumes:
+  gatekeep-data:

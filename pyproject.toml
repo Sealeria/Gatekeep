@@ -1,0 +1,32 @@
+[project]
+name = "gatekeep"
+version = "0.1.0"
+description = "Self-hosted proxy that compresses AI coding CLI traffic (Claude, Cursor, Codex, Vibe)."
+readme = "README.md"
+requires-python = ">=3.12"
+license = "AGPL-3.0-or-later"
+authors = [{ name = "Sealeria" }]
+maintainers = [{ name = "Sealeria" }]
+classifiers = [
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "fastapi>=0.110.0",
+    "uvicorn[standard]>=0.29.0",
+    "hypercorn[h2]>=0.16.0",
+    "h2>=4.1.0",
+    "httpx[http2]>=0.27.0",
+    "python-dotenv>=1.0.0",
+    "tiktoken>=0.7.0",
+    "zstandard>=0.22.0",
+]
+
+[project.urls]
+License = "https://www.gnu.org/licenses/agpl-3.0.html"
+Documentation = "docs/INSTALL.md"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"

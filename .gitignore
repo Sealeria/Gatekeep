@@ -1,0 +1,93 @@
+# Internal / local dev (not published)
+.claudeignore
+.clinerules
+.cursorignore
+CLAUDE.md
+backend/**/test_*.py
+install/autostart-gatekeep.ps1
+install/ensure-gatekeep.ps1
+start.bat
+run_gateway.bat
+frontend/.oxlintrc.json
+
+# Dependencies
+node_modules/
+venv/
+env/
+.venv/
+vendor/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+.eggs/
+.next/
+out/
+frontend/dist/
+
+# Package managers
+package-lock.json
+yarn.lock
+poetry.lock
+Pipfile.lock
+
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+credentials.json
+
+# Logs and runtime data
+*.log
+logs/
+.tmp/
+*.db
+*.sqlite
+*.sqlite3
+
+# IDE and editor
+.vscode/
+.idea/
+*.swp
+*.swo
+.cursor/
+
+# OS
+.DS_Store
+Thumbs.db
+nul
+
+# Testing and coverage
+.coverage
+.pytest_cache/
+htmlcov/
+coverage.xml
+
+# Temporary and local scratch (not part of the release)
+.cache/
+*.tmp
+bench/
+sandbox_test/
+9router-master/
+monitor-test.log
+test_proxy.ps1
+backend/.agent-test-out.txt
+backend/.c-*
+backend/.codex-smoke-*
+backend/.smoke-*
+backend/.vibe-smoke-*
+backend/.dump_bodies
+
+# Large local assets
+*.mp4
+*.mov
+*.zip
+*.tar.gz
+*.iso
+*.bin
